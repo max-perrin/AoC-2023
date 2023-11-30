@@ -1,2 +1,4 @@
-# AoC-2023
-Personal repo. for 2023 Advent of Code
+# Advent of Code - 2023
+#### Personal repository for the 2023 Advent of Code event <br>
+
+Link of the challenge : https://adventofcode.com
