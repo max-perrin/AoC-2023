@@ -1,4 +1,4 @@
-"""Day 1 AoC 2023
+"""Day 01 AoC 2023
 
 Challenge : concatenate the first and last integers of each line
             (double the integer if is single), and sum all lines results.
@@ -24,7 +24,7 @@ integers_letters = {
 RE_FIRST_PUZZLE = r"\d"
 RE_SECOND_PUZZLE = r"(?=(\d|" + "|".join(list(integers_letters.keys())) + "))"
 
-def line_result_int_str(line_input: str):
+def line_result_int_str(line_input: str) -> int:
     """ Gets the joined ints (int or str format, depends on the exercize)
         and returns concatenation of first and last int.
 
@@ -32,7 +32,8 @@ def line_result_int_str(line_input: str):
         line_input (str): line of the input file - joined ints to be cleaned
     
     Returns:
-        Line result (concatenation of the line's first and last int)
+        result (int): line result
+                    (concatenation of the line's first and last int)
     """
     for word in integers_letters.keys():
         line_input = line_input.replace(word, integers_letters[word])
